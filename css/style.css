@@ -1,0 +1,1282 @@
+@charset "UTF-8";
+/**
+    Author: Rifat Bhiuya
+    Author email: hello.rifatbhuiya@gmail.com
+    Version: 0.0.0.1
+*/
+
+/**
+----------------
+Table Of Content
+----------------
+0. Common CSS Start
+1. Header CSS Start
+2. Home Slider CSS Start
+3. Home Text CSS Start
+4. Destinations CSS Start
+5. Home Holiday CSS Start
+6. Why Choose CSS Start
+7. Accreditation CSS Start
+8. Reviews CSS Start
+9. Newsletter CSS Start
+10. BTT CSS Start
+11. Footer CSS Start
+12. Holiday Type CSS Start
+13. Offers CSS Start
+14. Offer Inner CSS Start
+15. About CSS Start
+16. Honeymoon CSS Start
+17. Santorini CSS Start
+18. Contact CSS Start
+*/
+
+@font-face {
+    font-family: "CharisSil Bold";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../fonts/CharisSilBold-GX2m.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CharisSil";
+    font-style: medium;
+    font-weight: 500;
+    src: url(../fonts/CharisSil-Jw77.ttf) format("truetype");
+}
+
+:root { 
+    /* Colors */
+    --primary_color: #00b9df;
+    --secondary_color: #52b582;
+    --white_color: #ffffff;
+    --offwhite_color: #edefde;
+    --text_color: #58595b;
+    --black_color: #000000;
+
+    /* Round */
+    --round_sm: 5px;
+    --round_md: 10px;
+    --round_lg: 25px;
+    --round_full: 50%;
+
+    /* Typography - {Typescale, 15px based - 1.200 minor thread} */
+    --h1: 45px;
+    --h2: 37px;
+    --h3: 31px;
+    --h4: 26px;
+    --h5: 21px;
+    --h6: 18px;
+    --lg: 18px;
+    --bs: 15px;
+    --sm: 13px;
+
+    /* Duration */
+    --transition: all ease-in-out .3s;
+
+    /* Font Family */
+    --sans_serif: "Montserrat", sans-serif;
+    --serif_bold: "CharisSil Bold", serif;
+    --serif: "CharisSil", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span,
+address,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+h5 {
+    font-size: var(--h5);
+}
+
+h6 {
+    font-size: var(--h6);
+}
+
+.primary-bg { 
+    background-color: var(--primary_color);
+}
+
+.bg-offwhite { 
+    background-color: var(--offwhite_color);
+}
+
+.primary-text {
+    color: var(--primary_color);
+}
+
+.secondary-text {
+    color: var(--secondary_color);
+}
+
+.section-padding {
+    padding: 64px 0;
+}
+
+.section-heading-type-one {
+    text-transform: uppercase;
+    font-size: var(--h4);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.section-heading-type-two {
+    text-transform: capitalize;
+    font-family: var(--serif);
+}
+
+.section-heading-type-three {
+    text-align: center;
+    color: var(--secondary_color);
+    font-weight: 500;
+    font-family: var(--serif);
+}
+
+.section-heading-gap {
+    margin-top: 48px;
+}
+
+a {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.secondary-arrow-button {
+    padding: 8px 12px;
+    color: var(--white_color);
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--secondary_color);
+    border: 1px solid transparent;
+}
+
+.secondary-arrow-button i {
+    font-size: var(--lg);
+}
+
+.secondary-arrow-button:hover {
+    color: var(--secondary_color);
+    border: 1px solid var(--secondary_color);
+    background-color: var(--white_color);
+}
+
+.page-heading {
+    background-color: var(--offwhite_color);
+}
+
+.page-heading h1 {
+    font-family: var(--serif);
+}
+
+.page-heading p {
+    margin-top: 32px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.page-action {
+    padding: 48px 0;
+    color: var(--white_color);
+    background: url(../images/page-action.png) no-repeat center / cover;
+}
+
+.page-action h2 {
+    font-size: var(--h5);
+    font-weight: 600;
+}
+
+.page-action p {
+    --lg: 20px;
+
+    font-weight: 600;
+    margin-top: 4px;
+    font-size: var(--lg);
+}
+
+.page-action p a {
+    color: var(--white_color);
+}
+
+.page-action p a:hover {
+    text-decoration: underline;
+}
+
+.page-action-btn {
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 24px;
+    background-color: var(--secondary_color);
+    border-radius: var(--round_lg);
+    -webkit-border-radius: var(--round_lg);
+    -moz-border-radius: var(--round_lg);
+    -ms-border-radius: var(--round_lg);
+    -o-border-radius: var(--round_lg);
+}
+
+.page-action-btn:hover {
+    opacity: .850;
+}
+
+.page-banner {
+    height: 400px;
+}
+
+.page-quote {
+    --lg: 24px;
+
+    padding: 48px 0;
+    font-size: var(--lg);
+    font-family: var(--serif);
+    color: var(--secondary_color);
+}
+
+.pagination button,
+.pagination a {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    color: darkgray;
+}
+
+body {
+    font-size: var(--bs);
+    scroll-behavior: smooth;
+    font-family: var(--sans_serif);
+    font-weight: 400;
+    color: var(--text_color);
+}
+/* Common CSS End */
+
+.main-header {
+    background-color: var(--white_color);
+    box-shadow: .5px .5px 5px 0 rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.main-header.fixed-header {
+    animation: sticky-anim .5s linear 1;
+    -webkit-animation: sticky-anim .5s linear 1;
+}
+
+@keyframes sticky-anim {
+    0%{
+        top: -32px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.main-header .main-logo {
+    width: 200px;
+}
+
+.main-header .nav-items a {
+    text-transform: uppercase;
+    font-size: var(--sm);
+    font-weight: 700;
+    color: var(--text_color);
+}
+
+.main-header .nav-items a:hover {
+    color: var(--primary_color);
+}
+
+.main-header .pe-lg-5 {
+    padding-right: 60px !important;
+}
+
+.main-header .call p,
+.main-header .call a {
+    font-size: var(--sm);
+    line-height: 1.0;
+    text-transform: uppercase;
+    color: var(--primary_color);
+    font-weight: 700;
+}
+
+.main-header .call a:hover {
+    text-decoration: underline;
+}
+
+.main-header .header-btn {
+    padding: 6px 10px;
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: var(--sm);
+    line-height: 1.0;
+    font-weight: 700;
+    background-color: var(--primary_color);
+    border-radius: var(--round_lg);
+    -webkit-border-radius: var(--round_lg);
+    -moz-border-radius: var(--round_lg);
+    -ms-border-radius: var(--round_lg);
+    -o-border-radius: var(--round_lg);
+}
+
+.main-header .header-btn:hover {
+    opacity: .7;
+}
+
+.main-header .header-social {
+    top: -26px;
+    right: 0;
+    padding: 16px 8px;
+    background-color: var(--secondary_color);
+    box-shadow: .5px .5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-header .header-social li:not(:first-child) {
+    padding-top: 6px;
+}
+
+.main-header .header-social a {
+    color: var(--white_color);
+    height: 24px;
+    width: 24px;
+    line-height: 22px;
+    text-align: center;
+    font-size: var(--sm);
+    border: 1px solid var(--white_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.main-header .header-social a:hover {
+    background-color: var(--white_color);
+    color: var(--secondary_color);
+}
+/* Header CSS End */
+
+.home-slider .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.home-slider .slick-dots li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.home-slider .slick-dots li button {
+    border: none;
+    background-color: var(--white_color);
+    color: transparent;
+    height: 12px;
+    width: 12px;
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.home-slider .slick-dots li.slick-active button {
+    background-color: var(--primary_color);
+}
+
+.home-slider .slider-content {
+    height: 640px;
+}
+
+.home-slider .slider-content .slider-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-slider .slider-content .slider-inner img,
+.home-slider .slider-content .slider-inner video {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.home-slider .slider-content .slide-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-slider .slider-content .slide-img img {
+    opacity: 1 !important;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+
+.home-slider .slider-content [data-animation-in] {
+    opacity: 0;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+    transition: opacity 0.6s ease 0.3s;
+    -webkit-transition: opacity 0.6s ease 0.3s;
+    -moz-transition: opacity 0.6s ease 0.3s;
+    -ms-transition: opacity 0.6s ease 0.3s;
+    -o-transition: opacity 0.6s ease 0.3s;
+}
+
+.zoomInImage {
+    -webkit-animation-name: zoomInImage;
+    animation-name: zoomInImage;
+}
+
+@-webkit-keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+@keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+.home-slider .slider-content .slider-inner iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.home-slider .slider-content .slider-inner .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 30;
+    color: var(--white_color);
+}
+
+.home-slider .slider-content .slider-inner .overlay h2 {
+    font-size: var(--h1);
+    font-family: var(--serif);
+}
+
+.home-slider .slider-content .slider-inner .overlay p {
+    --lg: 21px;
+
+    font-size: var(--lg);
+    font-family: var(--serif);
+}
+/* Home Slider CSS End */
+
+.home-text p {
+    font-weight: 500;
+}
+/* Home Text CSS End */
+
+.destinations .destination-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.destinations .destination-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.destinations .destination-card img {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+} 
+
+.destinations .destination-card:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.destinations .destination-card .overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 16px 12px 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.destinations .destination-card .overlay h6 {
+    text-transform: uppercase;
+    font-size: var(--bs);
+    font-weight: 700;
+    color: var(--white_color);
+}
+/* Destinations CSS End */
+
+.home-holiday {
+    padding: 52px 0 160px;
+    color: var(--white_color);
+    background-color: var(--primary_color);
+}
+
+.home-holiday .holiday-type-actions {
+    margin-top: 40px;
+}
+
+.home-holiday .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.home-holiday .grid li a {
+    padding: 10px 16px;
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid var(--white_color);
+}
+
+.home-holiday .grid li a i {
+    font-size: var(--lg);
+}
+
+.home-holiday .grid li a:hover {
+    background-color: var(--secondary_color);
+}
+/* Home Holiday CSS End */
+
+.why-choose {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+}
+
+.why-choose h2 {
+    color: var(--primary_color);
+    font-size: var(--h4);
+    font-family: var(--serif);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.why-choose h3 {
+    font-size: var(--bs);
+    font-weight: 600;
+}
+
+.why-choose .disc {
+    height: 6px;
+    width: 6px;
+    background-color: var(--primary_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+    transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
+}
+
+.why-choose .choose-list .d-flex:not(:first-child) {
+    margin-top: 16px;
+}
+/* Why Choose CSS End */
+
+.accreditation h4 {
+    font-size: var(--h6);
+    color: var(--primary_color);
+    font-weight: 700;
+}
+
+.accreditation p span {
+    color: var(--primary_color);
+}
+
+.accreditation hr {
+    border-bottom: 1px solid var(--offwhite_color);
+}
+/* Accreditation CSS End */
+
+.reviews .review-inner {
+    text-align: center;
+}
+
+.reviews .review-inner h3 {
+    font-size: var(--h6);
+    margin-bottom: 8px;
+    color: var(--secondary_color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reviews .review-inner h4 {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: var(--h6);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.reviews .review-inner.dot-border {
+    position: relative;
+}
+
+.reviews .review-inner.dot-border::after {
+    position: absolute;
+    content: '';
+    right: -16px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-image: url(../images/doted.png);
+    background-size: 100%;
+}
+/* Reviews CSS End */
+
+.newsletter {
+    padding: 100px 0;
+    color: var(--white_color);
+    background: url(../images/newsletter.png) no-repeat center / cover;
+}
+
+.newsletter h3 {
+    font-size: var(--h4);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.newsletter p {
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.newsletter .form-field {
+    margin-top: 24px;
+    width: 60%;
+}
+
+.newsletter .form-field input {
+    width: 100%;
+    height: 40px;
+    padding: 4px 16px;
+    border: none;
+    border-top-left-radius: var(--round_lg);
+    border-bottom-left-radius: var(--round_lg);
+    background-color: var(--white_color);
+    font-size: 14px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.newsletter .form-field input:focus {
+    background-color: var(--offwhite_color);
+}
+
+.newsletter .form-field button {
+    padding: 4px 16px;
+    border: none;
+    background-color: var(--primary_color);
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: var(--sm);
+    font-weight: 700;
+    border-top-right-radius: var(--round_lg);
+    border-bottom-right-radius: var(--round_lg);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.newsletter .form-field button:hover {
+    opacity: .8;
+}
+/* Newsletter CSS End */
+
+.btt {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+}
+
+.btt i {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: var(--lg);
+    box-shadow: .5px .5px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: var(--primary_color);
+    color: var(--white_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+/* BTT CSS End */
+
+.main-footer {
+    padding: 32px 0;
+    color: var(--white_color);
+    background: url(../images/footer_bg.png) no-repeat center / cover;
+}
+
+.main-footer .footer-logo img {
+    width: 200px;
+}
+
+.main-footer .call p,
+.main-footer .call a {
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--white_color);
+    font-weight: 700;
+}
+
+.main-footer .call a:hover {
+    text-decoration: underline;
+}
+
+.main-footer .footer-btn {
+    padding: 8px 12px;
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: var(--sm);
+    line-height: 1.3;
+    font-weight: 700;
+    background-color: var(--primary_color);
+    border-radius: var(--round_lg);
+    -webkit-border-radius: var(--round_lg);
+    -moz-border-radius: var(--round_lg);
+    -ms-border-radius: var(--round_lg);
+    -o-border-radius: var(--round_lg);
+}
+
+.main-footer .footer-btn:hover {
+    opacity: .7;
+}
+
+.main-footer .nav-items a {
+    text-transform: uppercase;
+    color: var(--white_color);
+    font-size: var(--sm);
+    font-weight: 600;
+}
+
+.main-footer .nav-items a:hover {
+    text-decoration: underline;
+}
+
+.main-footer .footer-social li:first-child {
+    padding-right: 20px;
+}
+
+.main-footer .footer-social li:first-child h6 {
+    font-size: var(--bs);
+    font-weight: 600;
+}
+
+.main-footer .footer-social a {
+    color: var(--white_color);
+    height: 24px;
+    width: 24px;
+    line-height: 22px;
+    text-align: center;
+    font-size: var(--sm);
+    border: 1px solid var(--white_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+
+.main-footer .footer-social a:hover {
+    background-color: var(--white_color);
+    color: var(--secondary_color);
+}
+
+.main-footer .copyright {
+    margin-top: 8px;
+    font-size: var(--sm);
+}
+/* Footer CSS End */
+
+.holiday-type .holiday-type-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.holiday-type .holiday-type-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.holiday-type .holiday-type-card img {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+} 
+
+.holiday-type .holiday-type-card:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.holiday-type .holiday-type-card .overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 16px 12px 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.holiday-type .holiday-type-card .overlay h6 {
+    text-transform: uppercase;
+    font-size: var(--bs);
+    font-weight: 700;
+    color: var(--white_color);
+}
+/* Holiday Type CSS End */
+
+.offers .offers-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.offers .offer-card {
+    padding: 20px;
+    border: 1px solid gainsboro;
+}
+
+.offers .offer-card .offer-thumbnail {
+    overflow: hidden;
+} 
+
+.offers .offer-card .offer-thumbnail img {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.offers .offer-card .offer-thumbnail:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.offers .offer-card .offer-name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: var(--h5);
+    font-weight: 700;
+    color: var(--secondary_color);
+}
+
+.offers .offer-card .offer-date {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.offers .offer-card .offer-description {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.offers .offer-card .footer {
+    margin-top: 20px;
+}
+
+.offers .offer-card .offer-price {
+    font-weight: 700;
+}
+
+.offers .offer-card .offer-action {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary_color);
+}
+
+.offers .offer-card .offer-action:hover {
+    opacity: .7;
+}
+
+.offers .offer-card .offer-action i {
+    font-size: var(--lg);
+}
+
+.offers hr {
+    margin: 3rem 0;
+    border-top: var(--primary_color) solid;
+    opacity: .6;
+}
+/* Offers CSS End */
+
+.offer-inner .offer-name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: var(--h4);
+    font-weight: 700;
+    color: var(--secondary_color);
+}
+
+.offer-inner .offer-date {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.offer-inner .offer-description {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.offer-inner .offer-price {
+    font-size: var(--lg);
+    font-weight: 700;
+}
+
+.offer-inner .offer-inner-action::before {
+    position: absolute;
+    content: '';
+    right: 190px;
+    top: 32px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--white_color);
+    z-index: 2;
+}
+
+.offer-inner .action-button {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    z-index: 3;
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: var(--sm);
+    font-weight: 600;
+    padding: 12px 24px;
+    background-color: var(--secondary_color);
+    border-radius: var(--round_lg);
+    -webkit-border-radius: var(--round_lg);
+    -moz-border-radius: var(--round_lg);
+    -ms-border-radius: var(--round_lg);
+    -o-border-radius: var(--round_lg);
+    border: 1px solid transparent;
+}
+
+.offer-inner .action-button:hover {
+    border: 1px solid var(--secondary_color);
+    background-color: var(--white_color);
+    color: var(--secondary_color);
+}
+
+.offer-inner hr {
+    margin: 3rem 0;
+    border-top: var(--primary_color) solid;
+    opacity: .6;
+}
+
+.offer-inner p {
+    font-weight: 500;
+}
+
+.offer-inner-card {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.offer-inner-card .img {
+    overflow: hidden;
+}
+
+.offer-inner-card .img img {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.offer-inner-card .img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* Offer Inner CSS End */
+
+.about.section-padding {
+    padding-bottom: 0;
+}
+
+.about h3,
+.about h4 {
+    font-size: var(--h6);
+    color: var(--secondary_color);
+    font-weight: 600;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+.about .accreditation img {
+    width: 140px;
+}
+
+.about h2 {
+    display: inline-block;
+    padding: 8px 32px;
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: var(--h5);
+    font-family: var(--serif);
+    background-color: var(--primary_color);
+    transform: translateY(22px);
+    -webkit-transform: translateY(22px);
+    -moz-transform: translateY(22px);
+    -ms-transform: translateY(22px);
+    -o-transform: translateY(22px);
+}
+/* About CSS End */
+
+.honeymoon h3 {
+    font-size: var(--h5);
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.honeymoon p {
+    font-weight: 500;
+}
+
+.honeymoon .images .images-grid {
+    display: grid;
+     grid-template-columns: 35% 30% 35%;
+}
+
+.honeymoon .images .images-grid img {
+    height: 100%;
+}
+/* Honeymoon CSS End */
+
+.santorini h3 {
+    font-size: var(--h5);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.santorini .grid:not(:first-child) {
+    margin-top: 20px;
+}
+
+.santorini .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 8px;
+}
+
+.santorini .grid h4 {
+    font-size: var(--bs);
+    font-weight: 600;
+}
+
+.santorini p {
+    font-weight: 500;
+}
+
+.santorini .images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.santorini .images-grid2 {
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.santorini .images-grid img {
+    height: 100%;
+}
+/* Santorini CSS End */
+
+.contact p {
+    font-weight: 700;
+    font-size: var(--lg);
+}
+
+.contact p a {
+    color: var(--text_color);
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+.contact .office-photo {
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+}
+
+.contact .contact-form {
+    padding: 140px 0 60px;
+}
+
+.contact .contact-form h4 {
+    padding-bottom: 32px;
+    font-size: var(--h5);
+}
+
+.contact .contact-form .form-control {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.contact .contact-form textarea.form-control {
+    height: 132px;
+}
+
+.contact .contact-form .form-inner {
+    padding: 20px;
+    background-color: var(--white_color);
+}
+
+.contact .contact-form button {
+    padding: 8px 20px;
+    font-size: var(--lg);
+    border: none;
+    color: var(--white_color);
+    background-color: var(--secondary_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact .contact-form button:hover {
+    opacity: .8;
+}
+/* Contact CSS End */

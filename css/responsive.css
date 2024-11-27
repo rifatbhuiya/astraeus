@@ -1,0 +1,579 @@
+@media (min-width: 991px) and (max-width: 1199.98px) {
+    :root {
+        --h1: 43px;
+        --h2: 35px;
+        --h3: 30px;
+        --h4: 25px;
+        --h5: 20px;
+        --h6: 18px;
+        --lg: 18px;
+        --bs: 15px;
+        --sm: 13px;
+    }
+
+    .main-header .main-logo,
+    .main-footer .footer-logo img {
+        width: 132px;
+    }
+
+    .main-header .pe-lg-5 {
+        padding-right: 40px !important;
+    }
+
+    .main-header .header-social {
+        padding: 14px 4px;
+    }
+
+    .main-header .nav-items a {
+        font-weight: 600;
+    }
+
+    .main-header .call p, .main-header .call a {
+        font-weight: 600;
+    }
+
+    .main-header .header-btn {
+        font-weight: 600;
+    }
+
+    .home-slider .slider-content {
+        height: 580px;
+    }
+
+    .why-choose .choose-list .d-flex:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .page-banner {
+        height: 340px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    :root {
+        --h1: 40px;
+        --h2: 32px;
+        --h3: 28px;
+        --h4: 23px;
+        --h5: 19px;
+        --h6: 17px;
+        --lg: 17px;
+        --bs: 15px;
+        --sm: 13px;
+    }
+
+    .section-padding {
+        padding: 48px 0;
+    }
+
+    .main-header .main-logo,
+    .main-footer .footer-logo img {
+        width: 132px;
+    }
+
+    .home-slider .slider-content {
+        height: 460px;
+    }
+
+    .home-slider .slick-dots li button {
+        height: 10px;
+        width: 10px;
+    }
+
+    .destinations .destination-items {
+        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-holiday {
+        padding: 52px 0 140px;
+    }
+
+    .why-choose .choose-list .d-flex:not(:first-child) {
+        margin-top: 10px;
+    }
+    
+    .page-banner {
+        height: 340px;
+    }
+
+    .offers .offers-item {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .offers hr,
+    .offer-inner hr {
+        margin: 2rem 0;
+    }
+
+    .offers .offer-card {
+        padding: 12px;
+    }
+
+    .offer-inner-card {
+        gap: 12px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offer-inner .action-button {
+        top: 10px;
+        padding: 10px 22px;
+    }
+
+    .about .accreditation img {
+        width: 100px;
+    }
+
+    .contact .office-photo {
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+    }
+
+    .contact .contact-form {
+        padding: 100px 0 60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-header .solidbar {
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .main-header .offcanvas-header {
+        border-bottom: 1px solid var(--offwhite_color);
+    }
+
+    .main-header .offcanvas-title img {
+        width: 132px;
+    }
+
+    .main-header .main-nav {
+        margin-bottom: 40px;
+    }
+
+    .main-header .main-nav li:not(:first-child) {
+        margin-top: 8px;
+    }
+
+    .main-header .nav-items a {
+        font-weight: 600;
+    }
+
+    .main-header .call p, .main-header .call a {
+        font-weight: 600;
+    }
+
+    .main-header .header-btn {
+        font-weight: 600;
+    }
+
+    .main-header .call {
+        margin-bottom: 8px;
+    }
+
+    .main-header .mobile-social {
+        margin-top: 16px;
+    }
+
+    .main-header .mobile-social a {
+        color: var(--white_color);
+        height: 28px;
+        width: 28px;
+        line-height: 26px;
+        text-align: center;
+        font-size: var(--bs);
+        border: 1px solid var(--secondary_color);
+        background-color: var(--secondary_color);
+        border-radius: var(--round_full);
+        -webkit-border-radius: var(--round_full);
+        -moz-border-radius: var(--round_full);
+        -ms-border-radius: var(--round_full);
+        -o-border-radius: var(--round_full);
+    }
+
+    .main-header .mobile-social a:hover {
+        background-color: var(--white_color);
+        color: var(--secondary_color);
+    }
+
+    .offers .offer-card .offer-name,
+    .offers .offer-card .offer-action {
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    :root {
+        --h1: 36px;
+        --h2: 29px;
+        --h3: 25px;
+        --h4: 21px;
+        --h5: 18px;
+        --h6: 16px;
+        --lg: 16px;
+        --bs: 14px;
+        --sm: 12px;
+    }
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .section-heading-gap {
+        margin-top: 28px;
+    }
+
+    .main-header .main-logo,
+    .main-footer .footer-logo img,
+    .main-header .offcanvas-title img {
+        width: 124px;
+    }
+
+    .home-slider .slider-content {
+        height: 320px;
+    }
+
+    .home-slider .slider-content .slider-inner .overlay p {
+        --lg: 18px;
+        font-size: var(--lg);
+    }
+
+    .home-holiday {
+        padding: 52px 0 140px;
+    }
+
+    .home-holiday .holiday-type-actions {
+        margin-top: 24px;
+    }
+
+    .why-choose .choose-list .d-flex:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .reviews .review-inner.dot-border {
+        margin-bottom: 12px;
+    }
+
+    .reviews .review-inner.dot-border::after {
+        display: none;
+    }
+
+    .newsletter {
+        padding: 64px 0;
+    }
+    
+    .page-banner {
+        height: 240px;
+    }
+
+    .page-heading p {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    .offers .offers-item {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    .offers hr,
+    .offer-inner hr {
+        margin: 2rem 0;
+    }
+
+    .offers .offer-card {
+        padding: 12px;
+    }
+
+    .offer-inner-card {
+        gap: 12px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offer-inner .offer-inner-action::before {
+        right: 176px;
+        top: 24px;
+    }
+
+    .offer-inner .offer-name {
+        font-weight: 600;
+    }
+
+    .offer-inner .action-button {
+        top: 14px;
+        padding: 8px 22px;
+    }
+
+    .about .accreditation img {
+        width: 90px;
+    }
+
+    .contact .office-photo {
+        transform: translateY(48px);
+        -webkit-transform: translateY(48px);
+        -moz-transform: translateY(48px);
+        -ms-transform: translateY(48px);
+        -o-transform: translateY(48px);
+    }
+
+    .contact .contact-form {
+        padding: 80px 0 48px;
+    }
+
+    .contact .w-50 {
+        width: 100% !important;
+    }
+
+    .contact .form-control,
+    .contact .contact-form button {
+        font-size: var(--bs);
+    }
+
+    .page-quote {
+	    --lg: 20px;
+        padding: 32px 0;
+    }
+
+    .honeymoon h3 {
+        font-weight: 600;
+    }
+
+    .santorini .images-grid,
+    .santorini .images-grid2 {
+        gap: 12px;
+    }
+
+    .santorini .images-grid2 {
+        margin: 12px 0;
+    }
+
+    .contact .contact-form h4 {
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-slider .slick-dots {
+        bottom: 12px;
+    }
+
+    .home-slider .slick-dots li {
+        margin: 0 6px;
+    }
+
+    .home-slider .slick-dots li button {
+        height: 8px;
+        width: 8px;
+    }
+
+    .destinations .destination-items,
+    .holiday-type .holiday-type-items,
+    .home-holiday .grid  {
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btt i {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --h1: 30px;
+        --h2: 25px;
+        --h3: 21px;
+        --h4: 19px;
+        --h5: 17px;
+        --h6: 15px;
+        --lg: 15px;
+        --bs: 14px;
+        --sm: 12px;
+    }
+
+    .section-padding {
+        padding: 32px 0;
+    }
+
+    .section-heading-gap {
+        margin-top: 28px;
+    }
+
+    .main-header .main-logo,
+    .main-footer .footer-logo img,
+    .main-header .offcanvas-title img {
+        width: 120px;
+    }
+
+    .home-slider .slider-content {
+        height: 240px;
+    }
+
+    .home-slider .slider-content .slider-inner .overlay p {
+        --lg: 16px;
+        font-size: var(--lg);
+    }
+
+    .home-holiday {
+        padding: 32px 0 80px;
+    }
+
+    .why-choose {
+        transform: translateY(-48px);
+        -webkit-transform: translateY(-48px);
+        -moz-transform: translateY(-48px);
+        -ms-transform: translateY(-48px);
+        -o-transform: translateY(-48px);
+    }
+
+    .home-holiday .holiday-type-actions {
+        margin-top: 24px;
+    }
+
+    .why-choose .choose-list .d-flex:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .reviews .review-inner.dot-border {
+        margin-bottom: 12px;
+    }
+
+    .reviews .review-inner.dot-border::after {
+        display: none;
+    }
+
+    .newsletter {
+        padding: 40px 0;
+    }
+
+    .newsletter .form-field {
+        margin-top: 20px;
+        width: 80%;
+    }
+    
+    .page-banner {
+        height: 180px;
+    }
+
+    .page-heading p {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    .offers .offers-item {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    .offers hr,
+    .offer-inner hr {
+        margin: 1.5rem 0;
+    }
+
+    .offers .offer-card {
+        padding: 12px;
+    }
+
+    .offer-inner-card {
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offer-inner .offer-inner-action::before {
+        right: 176px;
+        top: 14px;
+    }
+
+    .offer-inner .offer-name {
+        font-weight: 600;
+    }
+
+    .offer-inner .action-button {
+        top: 6px;
+        padding: 8px 22px;
+    }
+
+    .about .accreditation img {
+        width: 90px;
+    }
+
+    .contact .office-photo {
+        transform: translateY(32px);
+        -webkit-transform: translateY(32px);
+        -moz-transform: translateY(32px);
+        -ms-transform: translateY(32px);
+        -o-transform: translateY(32px);
+}
+
+    .contact .contact-form {
+        padding: 64px 0 32px;
+    }
+
+    .contact .w-50 {
+        width: 100% !important;
+    }
+
+    .contact .form-control,
+    .contact .contact-form button {
+        font-size: var(--bs);
+    }
+
+    .page-quote {
+	    --lg: 16px;
+        padding: 32px 0;
+    }
+
+    .honeymoon h3 {
+        font-weight: 600;
+    }
+
+    .santorini .images-grid,
+    .santorini .images-grid2 {
+        gap: 4px;
+    }
+
+    .santorini .images-grid2 {
+        margin: 4px 0;
+    }
+
+    .btt {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .main-footer .footer-social li:first-child {
+        padding-right: 0;
+    }
+
+    .page-action {
+        padding: 40px 0;
+    }
+
+    .page-action p {
+        --lg: 16px;
+        font-weight: 600;
+    }
+
+    .page-action-btn {
+        font-weight: 600;
+        padding: 4px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact .contact-form h4 {
+        padding-bottom: 16px;
+    }
+
+    .contact .contact-form .form-inner {
+        padding: 8px;
+    }
+}
