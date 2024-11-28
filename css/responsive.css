@@ -36,10 +36,6 @@
         font-weight: 600;
     }
 
-    .home-slider .slider-content {
-        height: 580px;
-    }
-
     .why-choose .choose-list .d-flex:not(:first-child) {
         margin-top: 10px;
     }
@@ -69,10 +65,6 @@
     .main-header .main-logo,
     .main-footer .footer-logo img {
         width: 132px;
-    }
-
-    .home-slider .slider-content {
-        height: 460px;
     }
 
     .home-slider .slick-dots li button {
@@ -233,10 +225,6 @@
     .main-footer .footer-logo img,
     .main-header .offcanvas-title img {
         width: 124px;
-    }
-
-    .home-slider .slider-content {
-        height: 320px;
     }
 
     .home-slider .slider-content .slider-inner .overlay p {
@@ -411,10 +399,6 @@
     .main-footer .footer-logo img,
     .main-header .offcanvas-title img {
         width: 120px;
-    }
-
-    .home-slider .slider-content {
-        height: 240px;
     }
 
     .home-slider .slider-content .slider-inner .overlay p {
