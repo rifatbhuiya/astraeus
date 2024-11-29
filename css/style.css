@@ -273,7 +273,7 @@ a {
 }
 
 .page-banner {
-    height: 400px;
+    height: 600px;
 }
 
 .page-quote {
@@ -441,10 +441,6 @@ body {
 
 .home-slider .slick-dots li.slick-active button {
     background-color: var(--primary_color);
-}
-
-.home-slider .slider-content {
-    /* height: 640px; */
 }
 
 .home-slider .slider-content .slider-inner {
@@ -894,6 +890,10 @@ body {
 .main-footer .copyright {
     margin-top: 8px;
     font-size: var(--sm);
+}
+
+.main-footer .gap-2 {
+    gap: 1rem!important;
 }
 /* Footer CSS End */
 

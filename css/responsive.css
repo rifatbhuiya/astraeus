@@ -41,7 +41,7 @@
     }
 
     .page-banner {
-        height: 340px;
+        height: 400px;
     }
 }
 
@@ -559,5 +559,17 @@
 
     .contact .contact-form .form-inner {
         padding: 8px;
+    }
+}
+
+@media (max-width: 430.98px) {
+    .home-holiday .grid {
+        gap: 8px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .newsletter .form-field {
+        margin-top: 16px;
+        width: 100%;
     }
 }

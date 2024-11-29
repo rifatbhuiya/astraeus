@@ -558,6 +558,15 @@
         const slideWrapper = $(".main-slider"),
         iframes = slideWrapper.find('.embed-player');
 
+        const setSlideHeight = () => {
+            const windowHeight = $(window).height();
+
+            $(".slider-content").each(function () {
+                const customHeight = $(this).data('height') || windowHeight;
+                $(this).css("height", customHeight + "px");
+            });
+        };
+
         const resizePlayer = (iframes, ratio) => {
             if (!iframes[0]) return;
             var win = $(".main-slider"),
@@ -588,6 +597,7 @@
         slideWrapper.on("init", function(e, slick){
             slick = $(slick.currentTarget);
             resizePlayer(iframes, 16/9);
+            setSlideHeight();
             var $firstAnimatingElements = $('.slider-content:first-child').find('[data-animation]');
             doAnimations($firstAnimatingElements);
         });
@@ -605,7 +615,6 @@
             speed: 700,
             dots: true,
             arrows: false,
-            adaptiveHeight: true,
         }).slickAnimation();
 
         function doAnimations(elements) {
@@ -626,7 +635,10 @@
 
         $(window).on("resize.slickVideoPlayer", function(){  
             resizePlayer(iframes, 16/9);
+            setSlideHeight();
         });
+
+        setSlideHeight();
     </script>
 
     <!-- Main Script Sheet -->
