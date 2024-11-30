@@ -1,3 +1,9 @@
+@media (min-width: 1199.98px) {
+    .home-slider .slider-content .slider-inner .overlay h2 {
+        --h1: 58px;
+    }
+}
+
 @media (min-width: 991px) and (max-width: 1199.98px) {
     :root {
         --h1: 43px;
@@ -132,7 +138,7 @@
 
 @media (max-width: 991.98px) {
     .main-header .solidbar {
-        font-size: 20px;
+        font-size: 23px;
         background-color: transparent;
         border: none;
     }
@@ -348,7 +354,7 @@
 
 @media (max-width: 767.98px) {
     .home-slider .slick-dots {
-        bottom: 12px;
+        bottom: 16%;
     }
 
     .home-slider .slick-dots li {

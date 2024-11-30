@@ -412,7 +412,7 @@ body {
 
 .home-slider .slick-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
